@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    height: 100vh; /*para que ocupe el total de la pagina*/
+    display: grid;
+    grid-template-rows: 1fr 4fr 1fr;
+    grid-template-columns: 3fr 1fr;
+    gap: 10px;
+    grid-template-areas: /*salta directamente a la parte descriptiva de las comillas*/
+    "header header"
+    "main aside"
+    "footer footer";
+}
+h2{
+    color: white;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.header{
+    background-color: green;
+    grid-area: header;
+}
+.main{
+    background-color: red;
+    grid-area: main;
+}
+.aside{
+    background-color: blue;
+    grid-area: aside;
+}
+.footer{
+    background-color: gold;
+    grid-area: footer;
+}
