@@ -3,177 +3,33 @@
     padding: 0;
 }
 
-/*------------ ACA CODIGO ------------*/
-.container {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: auto 1fr 1fr auto;
-    grid-template-areas:
-        "header header header header"
-        "main main main main"
-        "main main main main"
-        "footer footer footer footer";
-    gap: 10px;
-}
 
-/*Definicion de areas*/
-.header {
-    padding-right: 20px;
-    padding-left: 20px;
-    grid-area: header;
-    background-color: antiquewhite;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
+.texto-amigable {
+    font-family: "Roboto Flex", sans-serif;
+    font-size: 1.2em;
 
-.div-header {
-    display: flex;
-    align-items: center;
-}
-
-.div-header p {
-    font-size: 1.5em;
-    color: lightslategray;
-}
-
-.div-header a {
-    text-decoration: none;
-}
-
-.header img {
-    height: 40px;
-    padding: 10px;
-}
-
-.header ul {
-    grid-area: nav;
-    background-color: antiquewhite;
-    display: flex;
-    list-style-type: none;
-}
-
-.header ul a {
-    background-color: #fafafa;
-    padding: 10px;
-    margin: 5px;
-    font-size: 1em;
-    text-decoration: none;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-.header ul a:hover {
-    background-color: #f0f0f0;
-    border-color: #aaa;
-    color: #333;
-}
-
-.main {
-    grid-area: main;
-}
-
-/*---- INICIO TEXTO EN IMAGEN----*/
-.texto-en-img {
-    margin-top: 0;
-    position: relative;
-    width: 100%;
-    height: auto;
-    color: rgb(121, 121, 121);
-}
-
-.fondoppal {
-    width: 100%;
-    height: auto;
-    max-height: 500px;
-    object-fit: cover;
-    /*ajusta la imagen para que cubra el contenedor y mantenga la proporcion*/
-    object-position: center;
-    opacity: 70%;
-}
-
-.titulo-en-imagen,
-.slogan-en-imagen {
-    position: absolute;
-    /*posicion absoluta de los textos dentro del contenedor relativo*/
-    width: 100%;
-    text-align: center;
-    left: 50%;
-    transform: translate(-50%);
-    /*Centra horizontalmente*/
-    margin: 0 auto;
-
-}
-
-.titulo-en-imagen {
-    top: 25%;
-    /*ajusta la posicion vertical del titulo*/
-    width: 57%;
-    -webkit-text-stroke: 2.5px #000000;
-    font-size: 7vh;
-    background-color: #ffffffbe;
-    border-radius: 20px;
-
-
-}
-
-.slogan-en-imagen {
-    top: 65%;
-    width: 40%;
-    -webkit-text-stroke: 1.5px #000000;
-    background-color: #ffffffbe;
-    border-radius: 10px;
-    font-weight: bold;
-    font-style: italic;
-    font-size: 3vh;
-    margin-top: 1em;
-    /*separacion entre el titulo y el slogan*/
-}
-
-/*---- FIN TEXTO EN IMAGEN ----*/
-
-.texto-descripcion-index {
-    padding: 20px;
-    font-size: 1em;
 }
 
 .titulos-secciones {
     margin-top: 0.2em;
-    font-family: advancedarchitecture-regular;
+    font-family: "Overlock SC", sans-serif;
     text-align: center;
     font-size: 2em;
     font-weight: 100;
 }
 
-.columnas-index {
-    padding: 20px;
-    background-color: #8080807c;
-    display: flex;
-    justify-content: space-evenly;
-
+header a {
+    text-decoration: none;
 }
 
-.columnas2-index {
-    width: 31%;
-}
-
-.columnas2-index img {
-    width: 100%;
-    height: auto;
-    max-height: 400px;
-    object-fit: cover;
-    /*ajusta la imagen para que cubra el contenedor y mantenga la proporcion*/
-    object-position: center;
-}
-
-.columnas2-index h3 {
-    font-size: 1.5em;
-    text-align: center;
-}
-
-.columnas2-index p {
-    font-size: 1.2em;
-    text-align: justify;
+.link-ppal {
+    font-family: "Overlock SC", sans-serif;
+    font-size: 2em;
+    color: rgb(89, 89, 89);
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+    margin-left: 0.5em;
 
 }
 
@@ -195,17 +51,13 @@
     line-height: 2;
 }
 
-
-
-
-
-/*fin div .main*/
 .footer {
+    font-family: "Roboto Flex", sans-serif;
     grid-area: footer;
 }
 
 .div-footer {
-    background-color: blanchedalmond;
+    background-color: #ffebcd;
     display: flex;
     justify-content: center;
 }
@@ -219,8 +71,6 @@
     padding: 10px;
 }
 
-
-
 @media (max-width: 720px) {
 
     .div-mapa {
@@ -229,17 +79,16 @@
         margin: 0px auto;
         flex-direction: column;
     }
+}
 
+@media (max-width: 600px) {
 
-
-
-    @media (max-width: 600px) {
-  
-        .div-mapa {
-            width: 80%;
-        }
-        .div-mapa p {
-            text-align: center;
-            padding: 10px;
-        }
+    .div-mapa {
+        width: 80%;
     }
+
+    .div-mapa p {
+        text-align: center;
+        padding: 10px;
+    }
+}
