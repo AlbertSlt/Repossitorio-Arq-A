@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+.texto-amigable {
+    font-family: "Roboto Flex", sans-serif;
+    font-size: 1.2em;
+
+}
+
+.titulos-secciones { /*SASS*/
+    margin-top: 0.2em;
+    font-family: "Overlock SC", sans-serif;
+    text-align: center;
+    font-size: 2em;
+    font-weight: 100;
+}
+
+header a {
+    text-decoration: none;
+}
+
+.link-ppal { /*SASS*/
+    font-family: "Overlock SC", sans-serif;
+    font-size: 2em;
+    color: #595959;
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+    margin-left: 0.5em;
+
+}
+
+.div-mapa {
+    width: 40%;
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+
+}
+
+.mapa {
+    border: 2px solid black;
+}
+
+.div-mapa p {
+    padding: 20px;
+    font-size: 1em;
+    line-height: 2;
+}
+
+.footer {
+    font-family: "Roboto Flex", sans-serif;
+    grid-area: footer;
+}
+
+.div-footer {
+    background-color: #ffebcd;
+    display: flex;
+    justify-content: center;
+}
+
+.div-footer p {
+    padding: 10px;
+}
+
+.div-footer a {
+    text-decoration: none;
+    padding: 10px;
+}
+
+@media (max-width: 720px) {
+
+    .div-mapa {
+        width: 60%;
+        align-items: center;
+        margin: 0px auto;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .div-mapa {
+        width: 80%;
+    }
+
+    .div-mapa p {
+        text-align: center;
+        padding: 10px;
+    }
+}

@@ -8,26 +8,18 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
+
+    <!--Favicon-->
+    <link rel="icon" href="../imagenes/logo-ico.ico">
+
+
     <!--Estilos propios-->
     <link rel="stylesheet" href="../css/style.css">
-
-    <!--font googlefonts-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Overlock+SC&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap"
-        rel="stylesheet">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Overlock+SC&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap"
-        rel="stylesheet">
 
     <title>Estudio A - Servicios</title>
 </head>
 
-<body style="background-color: #f5f5f5;">
+<body>
     <header>
         <!--menu de navegación bootstrap-->
         <nav class="navbar navbar-expand-lg p-1" style="background-color: #ffebcd;">
@@ -68,16 +60,20 @@
 
     <main>
         <div class="main">
-            <div class="row">
-                <div class="col-12 d-flex justify-content-center">
-                    <img src="../imagenes/logo-png.png" alt="Logo Arq.A" style="width: 8%;">
+            <div class="div-logo">
+                <div class="row">
+                    <div class="col-12 d-flex justify-content-center">
+                        <img src="../imagenes/logo-png.png" alt="Logo Arq.A" style="width: 8%;">
+                    </div>
                 </div>
             </div>
 
-            <div class="row">
-                <div class="col-12 text-center">
-                    <h2 class="">Arq. A</h2>
-                    <h3 class="titulos-secciones">Servicios</h3>
+            <div class="text-logo">
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <h2 class="">Arq. A</h2>
+                        <h3 class="titulos-secciones">Servicios</h3>
+                    </div>
                 </div>
             </div>
 
@@ -87,46 +83,52 @@
             </p>
 
             <!--Comienzo seccion Servicios-->
-            <section class="d-flex flex-column justify-content-center">
+            <div class="tarjetas-serv">
+                <section class="d-flex flex-column justify-content-center">
 
-                <div class="card m-3 p-3" style="width: 97%;">
-                    <img src="../imagenes/obra.jpg" class="card-img-top" alt="Imagen obra gruesa">
-                    <div class="card-body">
-                        <p class="card-text"><strong> Obra Gruesa:</strong> Lorem ipsum dolor sit amet
-                            consectetur adipisicing elit. Tempora iusto soluta itaque
-                            ullam libero minus nihil incidunt reprehenderit qui vero</p>
+                    <div class="card m-3 p-3" style="width: 97%;">
+                        <img src="../imagenes/obra.jpg" class="card-img-top" alt="Imagen obra gruesa">
+                        <div class="card-body">
+                            <h5>Obra Gruesa</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet
+                                consectetur adipisicing elit. Tempora iusto soluta itaque
+                                ullam libero minus nihil incidunt reprehenderit qui vero</p>
+                        </div>
                     </div>
-                </div>
 
-                <div class="card m-3 p-3" style="width: 97%;">
-                    <img src="../imagenes/interiorismo.jpg" class="card-img-top" alt="Imagen interiorismo">
-                    <div class="card-body">
-                        <p class="card-text"><strong> Interiorismo:</strong> Lorem ipsum dolor sit amet
-                            consectetur adipisicing elit. Tempora iusto soluta itaque
-                            ullam libero minus nihil incidunt reprehenderit qui vero</p>
+                    <div class="card m-3 p-3" style="width: 97%;">
+                        <img src="../imagenes/interiorismo.jpg" class="card-img-top" alt="Imagen interiorismo">
+                        <div class="card-body">
+                            <h5>Interiorismo</h5>
+                            <p class="card-text"> Lorem ipsum dolor sit amet
+                                consectetur adipisicing elit. Tempora iusto soluta itaque
+                                ullam libero minus nihil incidunt reprehenderit qui vero</p>
+                        </div>
                     </div>
-                </div>
 
-                <div class="card m-3 p-3" style="width: 97%;">
-                    <img src="../imagenes/gestion.jpg" class="card-img-top" alt="Imagen gestion">
-                    <div class="card-body">
-                        <p class="card-text"><strong> Gestión:</strong> Lorem ipsum dolor sit amet
-                            consectetur adipisicing elit. Tempora iusto soluta itaque
-                            ullam libero minus nihil incidunt reprehenderit qui vero</p>
+                    <div class="card m-3 p-3" style="width: 97%;">
+                        <img src="../imagenes/gestion.jpg" class="card-img-top" alt="Imagen gestion">
+                        <div class="card-body">
+                            <h5>Gestión</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet
+                                consectetur adipisicing elit. Tempora iusto soluta itaque
+                                ullam libero minus nihil incidunt reprehenderit qui vero</p>
+                        </div>
                     </div>
-                </div>
-            </section>
+                </section>
+            </div>
         </div> <!--final div.main-->
 
     </main>
     <br>
     <footer>
-        <div class="div-footer">
-            <p>Salta - Argentina - Todos los derechos reservados Estudio A</p>
-            <a href="https://www.facebook.com" target="_blank">Facebook</a>
-            <a href="https://www.instagram.com" target="_blank">Instagram</a>
+        <div class="footer">
+            <div class="div-footer">
+                <p>Salta - Argentina - Todos los derechos reservados Estudio A</p>
+                <a href="https://www.facebook.com" target="_blank">Facebook</a>
+                <a href="https://www.instagram.com" target="_blank">Instagram</a>
+            </div>
         </div>
-
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"

@@ -1,94 +1,108 @@
+/*Para no colocar links de fonts en cada html, uso import con la seccion de href de googlefonts*/
+@import url("https://fonts.googleapis.com/css2?family=Overlock:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap");
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-
-.texto-amigable {
-    font-family: "Roboto Flex", sans-serif;
-    font-size: 1.2em;
-
+body {
+  background-color: #c4fcf0;
+}
+body header .navbar {
+  background-color: #dac37e;
+}
+body header .navbar .container-fluid .navbar-text {
+  /*Link header*/
+}
+body header .navbar .container-fluid .navbar-text a {
+  font-family: "Overlock", sans-serif;
+  font-size: 2em;
+  color: #4c8077;
+  text-decoration: none;
+  padding: 0;
+  margin: 0;
+  margin-left: 0.5em;
+}
+body main .main .text-logo {
+  color: #4c8077;
+}
+body main .main .text-logo h2 {
+  margin-top: 0.2em;
+  font-family: "Overlock", sans-serif;
+  font-size: 2em;
+}
+body main .main .text-logo h3 {
+  margin-top: 0.2em;
+  font-family: "Overlock", sans-serif;
+  font-size: 2em;
+}
+body main .main .text-logo p {
+  margin-top: 0.2em;
+  font-family: "Overlock", sans-serif;
+  font-size: 1.2em;
+}
+body main .main .descripcion p {
+  font-family: "Playfair", serif;
+  font-size: 1.5em;
+}
+body main .main .descripcion h4 {
+  font-family: "Overlock", sans-serif;
+  font-size: 2em;
+  color: #4c8077;
+}
+body main .main .tarjetas {
+  font-family: "Playfair", serif;
+}
+body main .main .tarjetas h3 {
+  font-size: 2em;
+}
+body main .main .tarjetas p {
+  font-size: 1.5em;
+}
+body main .main .tarjetas-proy h5 {
+  font-size: 2em;
+}
+body main .main .tarjetas-proy .text-body-secondary {
+  font-size: 1em;
+  font-style: italic;
+}
+body main .main .tarjetas-serv .card-body {
+  display: flex;
+  align-items: center;
+}
+body main .main .tarjetas-serv .card-body h5 {
+  font-size: 1.5em;
+  padding-right: 0.5em;
+}
+body main .main .tarjetas-serv .card-body .text-body-secondary {
+  font-size: 1em;
+  font-style: italic;
+}
+body main .main .div-mapa {
+  width: 40%;
+  margin: 20px auto;
+  display: flex;
+  justify-content: center;
+}
+body main .main .div-mapa p {
+  padding: 1em;
+  font-family: "Playfair", serif;
+  font-size: 1.5em;
+}
+body .footer {
+  background-color: #dac37e;
+  font-family: "Playfair", serif;
+  font-size: 1.2em;
+  padding-top: 15px;
+}
+body .footer .div-footer {
+  display: flex;
+  justify-content: center;
+  gap: 3em;
+}
+body .footer a {
+  text-decoration: none;
 }
 
-.titulos-secciones {
-    margin-top: 0.2em;
-    font-family: "Overlock SC", sans-serif;
-    text-align: center;
-    font-size: 2em;
-    font-weight: 100;
-}
-
-header a {
-    text-decoration: none;
-}
-
-.link-ppal {
-    font-family: "Overlock SC", sans-serif;
-    font-size: 2em;
-    color: rgb(89, 89, 89);
-    text-decoration: none;
-    padding: 0;
-    margin: 0;
-    margin-left: 0.5em;
-
-}
-
-.div-mapa {
-    width: 40%;
-    margin: 20px auto;
-    display: flex;
-    justify-content: center;
-
-}
-
-.mapa {
-    border: 2px solid black;
-}
-
-.div-mapa p {
-    padding: 20px;
-    font-size: 1em;
-    line-height: 2;
-}
-
-.footer {
-    font-family: "Roboto Flex", sans-serif;
-    grid-area: footer;
-}
-
-.div-footer {
-    background-color: #ffebcd;
-    display: flex;
-    justify-content: center;
-}
-
-.div-footer p {
-    padding: 10px;
-}
-
-.div-footer a {
-    text-decoration: none;
-    padding: 10px;
-}
-
-@media (max-width: 720px) {
-
-    .div-mapa {
-        width: 60%;
-        align-items: center;
-        margin: 0px auto;
-        flex-direction: column;
-    }
-}
-
-@media (max-width: 600px) {
-
-    .div-mapa {
-        width: 80%;
-    }
-
-    .div-mapa p {
-        text-align: center;
-        padding: 10px;
-    }
-}
+/*# sourceMappingURL=style.css.map */
