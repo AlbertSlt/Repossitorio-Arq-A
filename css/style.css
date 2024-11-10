@@ -12,9 +12,10 @@ body {
 body header .navbar {
   background-color: #dac37e;
 }
-body header .navbar .container-fluid .navbar-text {
-  /*Link header*/
-}
+
+/* body header .navbar .container-fluid .navbar-text {
+} 
+*/
 body header .navbar .container-fluid .navbar-text a {
   font-family: "Overlock", sans-serif;
   font-size: 2em;
