@@ -7,15 +7,15 @@
 }
 
 body {
-  background-color: #c4fcf0;
+  background: linear-gradient(to right, #e6e6e6, #f2fee4);
 }
 body header .navbar {
   background-color: #dac37e;
 }
-
-/* body header .navbar .container-fluid .navbar-text {
-} 
-*/
+body header .navbar .container-fluid .navbar-text {
+  padding: 0px;
+  /*Link header*/
+}
 body header .navbar .container-fluid .navbar-text a {
   font-family: "Overlock", sans-serif;
   font-size: 2em;
@@ -25,8 +25,12 @@ body header .navbar .container-fluid .navbar-text a {
   margin: 0;
   margin-left: 0.5em;
 }
+body main .main .div-logo {
+  padding-top: 10;
+}
 body main .main .text-logo {
   color: #4c8077;
+  padding-bottom: 20px;
 }
 body main .main .text-logo h2 {
   margin-top: 0.2em;

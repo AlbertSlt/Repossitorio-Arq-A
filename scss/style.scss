@@ -1,9 +1,9 @@
 /*Para no colocar links de fonts en cada html, uso import con la seccion de href de googlefonts*/
 @import url("https://fonts.googleapis.com/css2?family=Overlock:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap");
 
-$bg-color: #c4fcf0;
+$bg-color: linear-gradient(to right, #e6e6e6, #f2fee4);
 $nav-bg: #dac37e;
-$font-color-1:#4c8077;
+$font-color-1: #4c8077;
 $footer-bg: #dac37e;
 $font-1: "Overlock", sans-serif;
 $font-2: 'Playfair', serif;
@@ -16,14 +16,15 @@ $font-2: 'Playfair', serif;
 
 
 body {
-    background-color: $bg-color;
+    background: $bg-color;
 
     header {
         .navbar {
-            background-color: $nav-bg;
+           background-color: $nav-bg;
 
             .container-fluid {
                 .navbar-text {
+                    padding: 0px;
 
                     /*Link header*/
                     a {
@@ -44,10 +45,14 @@ body {
 
     main {
         .main {
-            .div-logo {}
+            .div-logo {
+                padding-top: 10;
+            }
 
             .text-logo {
                 color: $font-color-1;
+                padding-bottom: 20px;
+
                 h2 {
                     margin-top: 0.2em;
                     font-family: $font-1;
@@ -59,7 +64,8 @@ body {
                     font-family: $font-1;
                     font-size: 2em;
                 }
-                p{
+
+                p {
                     margin-top: 0.2em;
                     font-family: $font-1;
                     font-size: 1.2em;
@@ -85,19 +91,20 @@ body {
 
                 h3 {
                     font-size: 2em;
-                }         
+                }
 
                 p {
                     font-size: 1.5em;
                 }
 
-                
+
             }
 
             .tarjetas-proy {
                 h5 {
                     font-size: 2em;
                 }
+
                 .text-body-secondary {
                     font-size: 1em;
                     font-style: italic;
@@ -105,7 +112,7 @@ body {
             }
 
             .tarjetas-serv {
-                .card-body{
+                .card-body {
                     display: flex;
                     align-items: center;
 
@@ -113,13 +120,15 @@ body {
                         font-size: 1.5em;
                         padding-right: 0.5em;
                     }
+
                     .text-body-secondary {
                         font-size: 1em;
                         font-style: italic;
                     }
                 }
-                
+
             }
+
             .div-mapa {
                 width: 40%;
                 margin: 20px auto;
@@ -153,6 +162,4 @@ body {
             text-decoration: none;
         }
     }
-
-
 }
