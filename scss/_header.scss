@@ -1,0 +1,25 @@
+
+header {
+    .navbar {
+       background-color: $nav-bg;
+
+        .container-fluid {
+            .navbar-text {
+                padding: 0px;
+
+                /*Link header*/
+                a {
+                    font-family: $font-1;
+                    font-size: 2em;
+                    color: $font-color-1;
+                    text-decoration: none;
+                    padding: 0;
+                    margin: 0;
+                    margin-left: 0.5em;
+                }
+            }
+        }
+
+        .navbar-toogler {}
+    }
+}

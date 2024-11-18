@@ -1,0 +1,105 @@
+
+main {
+    .main {
+        .div-logo {
+            padding-top: 10px;
+        }
+
+        .text-logo {
+            color: $font-color-1;
+            padding-bottom: 20px;
+
+            h2 {
+                margin-top: 0.2em;
+                font-family: $font-1;
+                font-size: 2em;
+            }
+
+            h3 {
+                margin-top: 0.2em;
+                font-family: $font-1;
+                font-size: 2em;
+            }
+
+            p {
+                margin-top: 0.2em;
+                margin-bottom: 1em;
+                font-family: $font-1;
+                font-size: 1.2em;
+            }
+        }
+
+        .descripcion {
+
+            p {
+                font-family: $font-2;
+                font-size: 1.5em;
+            }
+
+            h4 {
+                margin-top: 100px;
+                font-family: $font-1;
+                font-size: 2.5em;
+                color: $font-color-1;
+            }
+        }
+
+        .tarjetas {
+            font-family: $font-2;
+            h3 {
+                font-size: 2em;
+            }
+
+            p {
+                font-size: 1.5em;
+            }
+            .card{
+                border: 2px black solid;
+
+            }
+
+        }
+
+        .tarjetas-proy {
+            h5 {
+                font-size: 2em;
+            }
+
+            .text-body-secondary {
+                font-size: 1em;
+                font-style: italic;
+            }
+        }
+
+        .tarjetas-serv {
+            .card-body {
+                display: flex;
+                align-items: center;
+
+                h5 {
+                    font-size: 1.5em;
+                    padding-right: 0.5em;
+                }
+
+                .text-body-secondary {
+                    font-size: 1em;
+                    font-style: italic;
+                }
+            }
+
+        }
+
+        .div-mapa {
+            width: 40%;
+            margin: 20px auto;
+            display: flex;
+            justify-content: center;
+
+            p {
+                padding: 1em;
+                font-family: $font-2;
+                font-size: 1.5em;
+            }
+        }
+    }
+}

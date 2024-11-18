@@ -1,4 +1,3 @@
-/*Para no colocar links de fonts en cada html, uso import con la seccion de href de googlefonts*/
 @import url("https://fonts.googleapis.com/css2?family=Overlock:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap");
 * {
   margin: 0;
@@ -9,14 +8,15 @@
 body {
   background: linear-gradient(to right, #e6e6e6, #f2fee4);
 }
-body header .navbar {
-  background-color: #dac37e;
+
+header .navbar {
+  background-color: #ffebcd;
 }
-body header .navbar .container-fluid .navbar-text {
+header .navbar .container-fluid .navbar-text {
   padding: 0px;
   /*Link header*/
 }
-body header .navbar .container-fluid .navbar-text a {
+header .navbar .container-fluid .navbar-text a {
   font-family: "Overlock", sans-serif;
   font-size: 2em;
   color: #4c8077;
@@ -25,89 +25,97 @@ body header .navbar .container-fluid .navbar-text a {
   margin: 0;
   margin-left: 0.5em;
 }
-body main .main .div-logo {
-  padding-top: 10;
+main .main .div-logo {
+  padding-top: 10px;
 }
-body main .main .text-logo {
+main .main .text-logo {
   color: #4c8077;
   padding-bottom: 20px;
 }
-body main .main .text-logo h2 {
+main .main .text-logo h2 {
   margin-top: 0.2em;
   font-family: "Overlock", sans-serif;
   font-size: 2em;
 }
-body main .main .text-logo h3 {
+main .main .text-logo h3 {
   margin-top: 0.2em;
   font-family: "Overlock", sans-serif;
   font-size: 2em;
 }
-body main .main .text-logo p {
+main .main .text-logo p {
   margin-top: 0.2em;
+  margin-bottom: 1em;
   font-family: "Overlock", sans-serif;
   font-size: 1.2em;
 }
-body main .main .descripcion p {
+main .main .descripcion p {
   font-family: "Playfair", serif;
   font-size: 1.5em;
 }
-body main .main .descripcion h4 {
+main .main .descripcion h4 {
+  margin-top: 100px;
   font-family: "Overlock", sans-serif;
-  font-size: 2em;
+  font-size: 2.5em;
   color: #4c8077;
 }
-body main .main .tarjetas {
+main .main .tarjetas {
   font-family: "Playfair", serif;
 }
-body main .main .tarjetas h3 {
+main .main .tarjetas h3 {
   font-size: 2em;
 }
-body main .main .tarjetas p {
+main .main .tarjetas p {
   font-size: 1.5em;
 }
-body main .main .tarjetas-proy h5 {
+main .main .tarjetas .card {
+  border: 2px black solid;
+}
+main .main .tarjetas-proy h5 {
   font-size: 2em;
 }
-body main .main .tarjetas-proy .text-body-secondary {
+main .main .tarjetas-proy .text-body-secondary {
   font-size: 1em;
   font-style: italic;
 }
-body main .main .tarjetas-serv .card-body {
+main .main .tarjetas-serv .card-body {
   display: flex;
   align-items: center;
 }
-body main .main .tarjetas-serv .card-body h5 {
+main .main .tarjetas-serv .card-body h5 {
   font-size: 1.5em;
   padding-right: 0.5em;
 }
-body main .main .tarjetas-serv .card-body .text-body-secondary {
+main .main .tarjetas-serv .card-body .text-body-secondary {
   font-size: 1em;
   font-style: italic;
 }
-body main .main .div-mapa {
+main .main .div-mapa {
   width: 40%;
   margin: 20px auto;
   display: flex;
   justify-content: center;
 }
-body main .main .div-mapa p {
+main .main .div-mapa p {
   padding: 1em;
   font-family: "Playfair", serif;
   font-size: 1.5em;
 }
-body .footer {
-  background-color: #dac37e;
+
+.footer {
+  background-color: #ffebcd;
   font-family: "Playfair", serif;
   font-size: 1.2em;
   padding-top: 15px;
 }
-body .footer .div-footer {
+.footer .div-footer {
   display: flex;
   justify-content: center;
   gap: 3em;
 }
-body .footer a {
+.footer a {
   text-decoration: none;
 }
+
+/*Para no colocar links de fonts en cada html, uso import con la seccion de href de googlefonts*/
 
 /*# sourceMappingURL=style.css.map */
