@@ -1,10 +1,9 @@
-@import "general";
-@import "header";
-@import "main";
-@import "footer";
-
-/*Para no colocar links de fonts en cada html, uso import con la seccion de href de googlefonts*/
-@import url("https://fonts.googleapis.com/css2?family=Overlock:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap");
+@use "general.scss";
+@use "header.scss";
+@use "main.scss";
+@use "footer.scss";
+@use "fonts.scss";
 
 
 
+/*C:\Users\Alberto\Documents\CoderHouse\Desarrollo Web Flex\2do ejercicio grids - responsive\scss\style.scss*/

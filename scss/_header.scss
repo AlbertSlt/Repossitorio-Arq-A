@@ -1,7 +1,9 @@
-
+@use "general.scss" as general;
 header {
     .navbar {
-       background-color: $nav-bg;
+       background-color: general.$nav-bg;
+       border-bottom: 0.1em solid darkslategray; 
+
 
         .container-fluid {
             .navbar-text {
@@ -9,9 +11,9 @@ header {
 
                 /*Link header*/
                 a {
-                    font-family: $font-1;
+                    font-family: general.$font-1;
                     font-size: 2em;
-                    color: $font-color-1;
+                    color: general.$font-color-1;
                     text-decoration: none;
                     padding: 0;
                     margin: 0;

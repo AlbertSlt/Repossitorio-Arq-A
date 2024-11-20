@@ -1,3 +1,4 @@
+@use "general" as general;
 
 main {
     .main {
@@ -6,46 +7,48 @@ main {
         }
 
         .text-logo {
-            color: $font-color-1;
+            color: general.$font-color-1;
             padding-bottom: 20px;
 
             h2 {
                 margin-top: 0.2em;
-                font-family: $font-1;
+                font-family: general.$font-1;
                 font-size: 2em;
             }
 
             h3 {
                 margin-top: 0.2em;
-                font-family: $font-1;
+                font-family: general.$font-1;
                 font-size: 2em;
             }
 
             p {
                 margin-top: 0.2em;
                 margin-bottom: 1em;
-                font-family: $font-1;
+                font-family: general.$font-1;
                 font-size: 1.2em;
             }
         }
 
         .descripcion {
+            padding: 6em;
 
             p {
-                font-family: $font-2;
+                font-family: general.$font-2;
                 font-size: 1.5em;
             }
 
             h4 {
                 margin-top: 100px;
-                font-family: $font-1;
+                font-family: general.$font-1;
                 font-size: 2.5em;
-                color: $font-color-1;
+                color: general.$font-color-1;
             }
         }
 
         .tarjetas {
-            font-family: $font-2;
+            font-family: general.$font-2;
+
             h3 {
                 font-size: 2em;
             }
@@ -53,7 +56,8 @@ main {
             p {
                 font-size: 1.5em;
             }
-            .card{
+
+            .card {
                 border: 2px black solid;
 
             }
@@ -69,37 +73,73 @@ main {
                 font-size: 1em;
                 font-style: italic;
             }
+
+            .tarjetas-proy-2 {
+                border: solid 1px darkslategray;
+                border-radius: 2em;
+                overflow: hidden;
+            }
         }
 
         .tarjetas-serv {
-            .card-body {
-                display: flex;
-                align-items: center;
+            margin-top: 3em;
 
-                h5 {
-                    font-size: 1.5em;
-                    padding-right: 0.5em;
+            .card-body {
+                padding: 2em;
+                display: flex;
+                flex-direction: column;
+                align-items: start;
+
+
+                .titulo-descripcion {
+                    display: flex;
+                    align-items: start;
+
+                    h5 {
+                        font-size: 1.5em;
+                        width: 8em;
+                    }
+                    @media (max-width: 768px) { 
+                        flex-direction: column;
+                    }
                 }
+               
 
                 .text-body-secondary {
                     font-size: 1em;
                     font-style: italic;
                 }
+
+                ul {
+                    margin-left: 10em;
+                    @media (max-width: 768px) { 
+                        margin: 0 auto;
+                    }
+                }
             }
+
 
         }
 
-        .div-mapa {
-            width: 40%;
-            margin: 20px auto;
-            display: flex;
-            justify-content: center;
-
-            p {
-                padding: 1em;
-                font-family: $font-2;
-                font-size: 1.5em;
-            }
+        .card {
+            margin: 0 auto;
+            margin-bottom: 3em;
         }
+    }
+    p{
+        font-size: 1.2em;
+    }
+}
+
+.div-mapa {
+    width: 40%;
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+
+    p {
+        padding: 1em;
+        font-family: general.$font-2;
+        font-size: 1.5em;
     }
 }

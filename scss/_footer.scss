@@ -1,8 +1,10 @@
+@use "general" as general;
 .footer {
-    background-color: $footer-bg;
-    font-family: $font-2;
+    background-color: general.$footer-bg;
+    font-family: general.$font-2;
     font-size: 1.2em;
     padding-top: 15px;
+    border-top: 0.1em solid darkslategray; 
 
     .div-footer {
         display: flex;
@@ -10,9 +12,16 @@
         gap: 3em;
     }
 
-    p {}
+    p {
+        font-size: 1em;
+    }
 
     a {
         text-decoration: none;
+    }
+    img {
+        width: 1.2em; // o el tamaño que desees
+        height: 1.2em; // o el tamaño que desees
+        margin-right: 10px; // o el margen que desees
     }
 }

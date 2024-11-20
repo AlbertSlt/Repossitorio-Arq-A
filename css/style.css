@@ -1,3 +1,4 @@
+/*Para no colocar links de fonts en cada html, uso import con la seccion de href de googlefonts*/
 @import url("https://fonts.googleapis.com/css2?family=Overlock:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap");
 * {
   margin: 0;
@@ -6,11 +7,12 @@
 }
 
 body {
-  background: linear-gradient(to right, #e6e6e6, #f2fee4);
+  background: linear-gradient(to bottom, #ffebcd, #c7c5b8);
 }
 
 header .navbar {
   background-color: #ffebcd;
+  border-bottom: 0.1em solid darkslategray;
 }
 header .navbar .container-fluid .navbar-text {
   padding: 0px;
@@ -48,6 +50,9 @@ main .main .text-logo p {
   font-family: "Overlock", sans-serif;
   font-size: 1.2em;
 }
+main .main .descripcion {
+  padding: 6em;
+}
 main .main .descripcion p {
   font-family: "Playfair", serif;
   font-size: 1.5em;
@@ -77,45 +82,89 @@ main .main .tarjetas-proy .text-body-secondary {
   font-size: 1em;
   font-style: italic;
 }
-main .main .tarjetas-serv .card-body {
-  display: flex;
-  align-items: center;
+main .main .tarjetas-proy .tarjetas-proy-2 {
+  border: solid 1px darkslategray;
+  border-radius: 2em;
+  overflow: hidden;
 }
-main .main .tarjetas-serv .card-body h5 {
+main .main .tarjetas-serv {
+  margin-top: 3em;
+}
+main .main .tarjetas-serv .card-body {
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+main .main .tarjetas-serv .card-body .titulo-descripcion {
+  display: flex;
+  align-items: start;
+}
+main .main .tarjetas-serv .card-body .titulo-descripcion h5 {
   font-size: 1.5em;
-  padding-right: 0.5em;
+  width: 8em;
+}
+@media (max-width: 768px) {
+  main .main .tarjetas-serv .card-body .titulo-descripcion {
+    flex-direction: column;
+  }
 }
 main .main .tarjetas-serv .card-body .text-body-secondary {
   font-size: 1em;
   font-style: italic;
 }
-main .main .div-mapa {
+main .main .tarjetas-serv .card-body ul {
+  margin-left: 10em;
+}
+@media (max-width: 768px) {
+  main .main .tarjetas-serv .card-body ul {
+    margin: 0 auto;
+  }
+}
+main .main .card {
+  margin: 0 auto;
+  margin-bottom: 3em;
+}
+main p {
+  font-size: 1.2em;
+}
+
+.div-mapa {
   width: 40%;
   margin: 20px auto;
   display: flex;
   justify-content: center;
 }
-main .main .div-mapa p {
+.div-mapa p {
   padding: 1em;
   font-family: "Playfair", serif;
   font-size: 1.5em;
 }
 
 .footer {
-  background-color: #ffebcd;
+  background-color: #c7c5b8;
   font-family: "Playfair", serif;
   font-size: 1.2em;
   padding-top: 15px;
+  border-top: 0.1em solid darkslategray;
 }
 .footer .div-footer {
   display: flex;
   justify-content: center;
   gap: 3em;
 }
+.footer p {
+  font-size: 1em;
+}
 .footer a {
   text-decoration: none;
 }
+.footer img {
+  width: 1.2em;
+  height: 1.2em;
+  margin-right: 10px;
+}
 
-/*Para no colocar links de fonts en cada html, uso import con la seccion de href de googlefonts*/
+/*C:\Users\Alberto\Documents\CoderHouse\Desarrollo Web Flex\2do ejercicio grids - responsive\scss\style.scss*/
 
 /*# sourceMappingURL=style.css.map */
