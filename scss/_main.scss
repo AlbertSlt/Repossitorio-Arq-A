@@ -4,6 +4,17 @@ main {
     .main {
         .div-logo {
             padding-top: 10px;
+
+            img {
+                transform: rotate3d(0, 0, 0, 0deg);
+                transition: all 0.2s ease-in-out;
+
+                &:hover {
+                    transform: rotate3d(0, 1, 0, 360deg);
+                    filter: saturate(0%) contrast(40%);
+                }
+            }
+
         }
 
         .text-logo {
@@ -31,7 +42,11 @@ main {
         }
 
         .descripcion {
-            padding: 6em;
+            padding: 4em;
+
+            @media (max-width: 768px) {
+                padding: 2em;
+            }
 
             p {
                 font-family: general.$font-2;
@@ -83,6 +98,7 @@ main {
 
         .tarjetas-serv {
             margin-top: 3em;
+            padding: 2em;
 
             .card-body {
                 padding: 2em;
@@ -99,11 +115,12 @@ main {
                         font-size: 1.5em;
                         width: 8em;
                     }
-                    @media (max-width: 768px) { 
+
+                    @media (max-width: 768px) {
                         flex-direction: column;
                     }
                 }
-               
+
 
                 .text-body-secondary {
                     font-size: 1em;
@@ -112,7 +129,8 @@ main {
 
                 ul {
                     margin-left: 10em;
-                    @media (max-width: 768px) { 
+
+                    @media (max-width: 768px) {
                         margin: 0 auto;
                     }
                 }
@@ -125,8 +143,15 @@ main {
             margin: 0 auto;
             margin-bottom: 3em;
         }
+
+        .imagen-nosotros {
+            margin: 0 auto;
+            border: 5px solid black;
+            width: 80%;
+        }
     }
-    p{
+
+    p {
         font-size: 1.2em;
     }
 }
