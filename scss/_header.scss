@@ -1,8 +1,9 @@
 @use "general.scss" as general;
+
 header {
     .navbar {
-       background-color: general.$nav-bg;
-       border-bottom: 0.1em solid darkslategray; 
+        background-color: general.$nav-bg;
+        border-bottom: 0.1em solid darkslategray;
 
 
         .container-fluid {
@@ -22,6 +23,5 @@ header {
             }
         }
 
-        .navbar-toogler {}
     }
 }
