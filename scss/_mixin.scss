@@ -1,0 +1,21 @@
+@use "general" as general;
+
+@mixin descripcion{
+    padding: 4em;
+
+    @media (max-width: 768px) {
+      padding: 2em;
+    }
+
+    p {
+      font-family: general.$font-2;
+      font-size: 1.5em;
+    }
+
+    h4 {
+      margin-top: 100px;
+      font-family: general.$font-1;
+      font-size: 2.5em;
+      color: general.$font-color-1;
+    }
+}

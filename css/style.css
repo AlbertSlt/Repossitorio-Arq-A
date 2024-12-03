@@ -31,14 +31,27 @@ header .navbar .container-fluid .navbar-text a {
 
 main .main .div-logo {
   padding-top: 10px;
+  display: flex;
+  justify-content: center;
 }
 main .main .div-logo img {
+  width: 8vw;
   transform: rotate3d(0, 0, 0, 0deg);
   transition: all 0.2s ease-in-out;
 }
 main .main .div-logo img:hover {
   transform: rotate3d(0, 1, 0, 360deg);
   filter: saturate(0%) contrast(40%);
+}
+@media (max-width: 1024px) {
+  main .main .div-logo img {
+    width: 15vw;
+  }
+}
+@media (max-width: 768px) {
+  main .main .div-logo img {
+    width: 20vw;
+  }
 }
 main .main .text-logo {
   color: #4c8077;
@@ -55,108 +68,200 @@ main .main .text-logo h3 {
   font-size: 2em;
 }
 main .main .text-logo p {
-  margin-top: 0.2em;
-  margin-bottom: 1em;
-  font-family: "Overlock", sans-serif;
-  font-size: 1.2em;
-}
-main .main .descripcion {
   padding: 4em;
+  padding: 0px;
 }
 @media (max-width: 768px) {
-  main .main .descripcion {
+  main .main .text-logo p {
     padding: 2em;
   }
 }
-main .main .descripcion p {
+main .main .text-logo p p {
   font-family: "Playfair", serif;
   font-size: 1.5em;
 }
-main .main .descripcion h4 {
+main .main .text-logo p h4 {
   margin-top: 100px;
   font-family: "Overlock", sans-serif;
   font-size: 2.5em;
   color: #4c8077;
 }
-main .main .tarjetas {
+main .texto-desc {
+  padding: 4em;
+}
+@media (max-width: 768px) {
+  main .texto-desc {
+    padding: 2em;
+  }
+}
+main .texto-desc p {
   font-family: "Playfair", serif;
-}
-main .main .tarjetas h3 {
-  font-size: 2em;
-}
-main .main .tarjetas p {
   font-size: 1.5em;
 }
-main .main .tarjetas .card {
-  border: 2px black solid;
+main .texto-desc h4 {
+  margin-top: 100px;
+  font-family: "Overlock", sans-serif;
+  font-size: 2.5em;
+  color: #4c8077;
 }
-main .main .tarjetas-proy h5 {
+main .descripcion {
+  padding: 4em;
+}
+@media (max-width: 768px) {
+  main .descripcion {
+    padding: 2em;
+  }
+}
+main .descripcion p {
+  font-family: "Playfair", serif;
+  font-size: 1.5em;
+}
+main .descripcion h4 {
+  margin-top: 100px;
+  font-family: "Overlock", sans-serif;
+  font-size: 2.5em;
+  color: #4c8077;
+}
+main .tarjetas {
+  overflow: hidden;
+  font-family: "Playfair", serif;
+}
+main .tarjetas h3 {
   font-size: 2em;
 }
-main .main .tarjetas-proy .text-body-secondary {
+main .tarjetas p {
+  font-size: 1.5em;
+}
+main .tarjetas .card {
+  border: 2px solid black;
+}
+main .tarjetas-proy h5 {
+  font-size: 2em;
+}
+main .tarjetas-proy .text-body-secondary {
   font-size: 1em;
   font-style: italic;
 }
-main .main .tarjetas-proy .tarjetas-proy-2 {
+main .tarjetas-proy .tarjetas-proy-2 {
   border: solid 1px darkslategray;
   border-radius: 2em;
   overflow: hidden;
 }
-main .main .tarjetas-serv {
+main .tarjetas-serv {
   margin-top: 3em;
   padding: 2em;
 }
-main .main .tarjetas-serv .card-body {
+main .tarjetas-serv .card {
+  width: 96%;
+  margin: 0 auto;
+  margin-bottom: 2em;
+}
+main .tarjetas-serv .card-body {
   padding: 2em;
   display: flex;
   flex-direction: column;
   align-items: start;
 }
-main .main .tarjetas-serv .card-body .titulo-descripcion {
+main .tarjetas-serv .card-body .titulo-descripcion {
   display: flex;
   align-items: start;
 }
-main .main .tarjetas-serv .card-body .titulo-descripcion h5 {
+main .tarjetas-serv .card-body .titulo-descripcion h5 {
   font-size: 1.5em;
   width: 8em;
 }
 @media (max-width: 768px) {
-  main .main .tarjetas-serv .card-body .titulo-descripcion {
+  main .tarjetas-serv .card-body .titulo-descripcion {
     flex-direction: column;
   }
 }
-main .main .tarjetas-serv .card-body .text-body-secondary {
+main .tarjetas-serv .card-body .text-body-secondary {
   font-size: 1em;
   font-style: italic;
 }
-main .main .tarjetas-serv .card-body ul {
+main .tarjetas-serv .card-body ul {
   margin-left: 10em;
 }
 @media (max-width: 768px) {
-  main .main .tarjetas-serv .card-body ul {
+  main .tarjetas-serv .card-body ul {
     margin: 0 auto;
   }
 }
-main .main .card {
+main .card {
   margin: 0 auto;
   margin-bottom: 3em;
 }
-main .main .imagen-nosotros {
+main .imagen-nosotros {
   margin: 0 auto;
   border: 5px solid black;
   width: 80%;
 }
-main p {
+
+p {
   font-size: 1.2em;
 }
 
+.boton-submit {
+  background-color: #ffebcd;
+  color: black;
+  border: 1px solid black;
+}
+.boton-submit:hover {
+  background-color: #c7c5b8;
+  color: black;
+  border: 1px solid black;
+}
+
+.texto-amigable {
+  padding: 4em;
+  padding: 0;
+  color: black;
+}
+@media (max-width: 768px) {
+  .texto-amigable {
+    padding: 2em;
+  }
+}
+.texto-amigable p {
+  font-family: "Playfair", serif;
+  font-size: 1.5em;
+}
+.texto-amigable h4 {
+  margin-top: 100px;
+  font-family: "Overlock", sans-serif;
+  font-size: 2.5em;
+  color: #4c8077;
+}
+
 .div-mapa {
-  width: 40%;
   margin: 20px auto;
   display: flex;
   justify-content: center;
+  width: 40%;
+  aspect-ratio: 4/2;
+  margin-bottom: 2.2em;
 }
-.div-mapa p {
+@media (max-width: 1024px) {
+  .div-mapa {
+    width: 70%;
+    height: 80%;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media (max-width: 768px) {
+  .div-mapa {
+    width: 70%;
+    height: 80%;
+    flex-direction: column;
+  }
+}
+.div-mapa .mapa {
+  border: 2px solid black;
+  width: 80%;
+  margin-right: 1em;
+}
+.div-mapa .mapa p {
   padding: 1em;
   font-family: "Playfair", serif;
   font-size: 1.5em;
@@ -174,8 +279,21 @@ main p {
   justify-content: center;
   gap: 3em;
 }
+@media (max-width: 768px) {
+  .footer .div-footer {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5em;
+  }
+}
 .footer p {
   font-size: 1em;
+}
+@media (max-width: 768px) {
+  .footer p {
+    text-align: center;
+    margin: 0;
+  }
 }
 .footer a {
   text-decoration: none;

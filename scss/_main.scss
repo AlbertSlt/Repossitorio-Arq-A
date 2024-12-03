@@ -1,170 +1,197 @@
 @use "general" as general;
-
+@use "mixin" as mixin;
 main {
-    .main {
-        .div-logo {
-            padding-top: 10px;
+  .main {
+    .div-logo {
+      padding-top: 10px;
+      display: flex;
+      justify-content: center;
+      img {
+        width: 8vw;
+        transform: rotate3d(0, 0, 0, 0deg);
+        transition: all 0.2s ease-in-out;
 
-            img {
-                transform: rotate3d(0, 0, 0, 0deg);
-                transition: all 0.2s ease-in-out;
-
-                &:hover {
-                    transform: rotate3d(0, 1, 0, 360deg);
-                    filter: saturate(0%) contrast(40%);
-                }
-            }
-
+        &:hover {
+          transform: rotate3d(0, 1, 0, 360deg);
+          filter: saturate(0%) contrast(40%);
         }
-
-        .text-logo {
-            color: general.$font-color-1;
-            padding-bottom: 20px;
-
-            h2 {
-                margin-top: 0.2em;
-                font-family: general.$font-1;
-                font-size: 2em;
-            }
-
-            h3 {
-                margin-top: 0.2em;
-                font-family: general.$font-1;
-                font-size: 2em;
-            }
-
-            p {
-                margin-top: 0.2em;
-                margin-bottom: 1em;
-                font-family: general.$font-1;
-                font-size: 1.2em;
-            }
+        @media (max-width: 1024px) {
+          width: 15vw;
         }
-
-        .descripcion {
-            padding: 4em;
-
-            @media (max-width: 768px) {
-                padding: 2em;
-            }
-
-            p {
-                font-family: general.$font-2;
-                font-size: 1.5em;
-            }
-
-            h4 {
-                margin-top: 100px;
-                font-family: general.$font-1;
-                font-size: 2.5em;
-                color: general.$font-color-1;
-            }
+        @media (max-width: 768px) {
+          width: 20vw;
         }
+      }
+    }
 
-        .tarjetas {
-            font-family: general.$font-2;
+    .text-logo {
+      color: general.$font-color-1;
+      padding-bottom: 20px;
 
-            h3 {
-                font-size: 2em;
-            }
+      h2 {
+        margin-top: 0.2em;
+        font-family: general.$font-1;
+        font-size: 2em;
+      }
 
-            p {
-                font-size: 1.5em;
-            }
+      h3 {
+        margin-top: 0.2em;
+        font-family: general.$font-1;
+        font-size: 2em;
+      }
 
-            .card {
-                border: 2px black solid;
+      p {
+        @include mixin.descripcion;
+        padding: 0px;
+      }
+    }
+  }
+  .texto-desc {
+    @include mixin.descripcion;
+  }
 
-            }
+  .descripcion {
+    @include mixin.descripcion;
+  }
 
-        }
+  .tarjetas {
+    overflow: hidden;
+    font-family: general.$font-2;
 
-        .tarjetas-proy {
-            h5 {
-                font-size: 2em;
-            }
-
-            .text-body-secondary {
-                font-size: 1em;
-                font-style: italic;
-            }
-
-            .tarjetas-proy-2 {
-                border: solid 1px darkslategray;
-                border-radius: 2em;
-                overflow: hidden;
-            }
-        }
-
-        .tarjetas-serv {
-            margin-top: 3em;
-            padding: 2em;
-
-            .card-body {
-                padding: 2em;
-                display: flex;
-                flex-direction: column;
-                align-items: start;
-
-
-                .titulo-descripcion {
-                    display: flex;
-                    align-items: start;
-
-                    h5 {
-                        font-size: 1.5em;
-                        width: 8em;
-                    }
-
-                    @media (max-width: 768px) {
-                        flex-direction: column;
-                    }
-                }
-
-
-                .text-body-secondary {
-                    font-size: 1em;
-                    font-style: italic;
-                }
-
-                ul {
-                    margin-left: 10em;
-
-                    @media (max-width: 768px) {
-                        margin: 0 auto;
-                    }
-                }
-            }
-
-
-        }
-
-        .card {
-            margin: 0 auto;
-            margin-bottom: 3em;
-        }
-
-        .imagen-nosotros {
-            margin: 0 auto;
-            border: 5px solid black;
-            width: 80%;
-        }
+    h3 {
+      font-size: 2em;
     }
 
     p {
-        font-size: 1.2em;
+      font-size: 1.5em;
     }
+
+    .card {
+      border: 2px solid black;
+    }
+  }
+
+  .tarjetas-proy {
+    h5 {
+      font-size: 2em;
+    }
+
+    .text-body-secondary {
+      font-size: 1em;
+      font-style: italic;
+    }
+
+    .tarjetas-proy-2 {
+      border: solid 1px darkslategray;
+      border-radius: 2em;
+      overflow: hidden;
+    }
+  }
+
+  .tarjetas-serv {
+    margin-top: 3em;
+    padding: 2em;
+    .card {
+      width: 96%;
+      margin: 0 auto;
+      margin-bottom: 2em;
+    }
+    .card-body {
+      padding: 2em;
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+
+      .titulo-descripcion {
+        display: flex;
+        align-items: start;
+
+        h5 {
+          font-size: 1.5em;
+          width: 8em;
+        }
+
+        @media (max-width: 768px) {
+          flex-direction: column;
+        }
+      }
+
+      .text-body-secondary {
+        font-size: 1em;
+        font-style: italic;
+      }
+
+      ul {
+        margin-left: 10em;
+
+        @media (max-width: 768px) {
+          margin: 0 auto;
+        }
+      }
+    }
+  }
+
+  .card {
+    margin: 0 auto;
+    margin-bottom: 3em;
+  }
+
+  .imagen-nosotros {
+    margin: 0 auto;
+    border: 5px solid black;
+    width: 80%;
+  }
 }
 
+p {
+  font-size: 1.2em;
+}
+.boton-submit {
+  background-color: #ffebcd;
+  color: black;
+  border: 1px solid black;
+
+  &:hover {
+    background-color: #c7c5b8;
+    color: black;
+    border: 1px solid black;
+  }
+}
+.texto-amigable {
+  @include mixin.descripcion;
+  padding: 0;
+  color: black;
+}
 .div-mapa {
-    width: 40%;
-    margin: 20px auto;
-    display: flex;
-    justify-content: center;
+  margin: 20px auto;
+  display: flex;
+  justify-content: center;
+  width: 40%;
+  aspect-ratio: 4/2;
+  margin-bottom: 2.2em;
+
+  @media (max-width: 1024px) {
+    width: 70%;
+    height: 80%;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  @media (max-width: 768px) {
+    width: 70%;
+    height: 80%;
+    flex-direction: column;
+  }
+
+  .mapa {
+    border: 2px solid black;
+    width: 80%;
+    margin-right: 1em;
 
     p {
-        padding: 1em;
-        font-family: general.$font-2;
-        font-size: 1.5em;
+      padding: 1em;
+      font-family: general.$font-2;
+      font-size: 1.5em;
     }
+  }
 }

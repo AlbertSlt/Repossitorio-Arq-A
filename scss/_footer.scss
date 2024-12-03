@@ -1,27 +1,39 @@
 @use "general" as general;
 .footer {
-    background-color: general.$footer-bg;
-    font-family: general.$font-2;
-    font-size: 1.2em;
-    padding-top: 15px;
-    border-top: 0.1em solid darkslategray; 
+  background-color: general.$footer-bg;
+  font-family: general.$font-2;
+  font-size: 1.2em;
+  padding-top: 15px;
+  border-top: 0.1em solid darkslategray;
 
-    .div-footer {
-        display: flex;
-        justify-content: center;
-        gap: 3em;
-    }
+  .div-footer {
+    display: flex;
+    justify-content: center;
+    gap: 3em;
 
-    p {
-        font-size: 1em;
+    @media (max-width: 768px) {
+      flex-direction: column;
+      align-items: center;
+      gap: 0.5em;
     }
+  }
 
-    a {
-        text-decoration: none;
-    }
-    img {
-        width: 1.2em; // o el tamaño que desees
-        height: 1.2em; // o el tamaño que desees
-        margin-right: 10px; // o el margen que desees
-    }
+  p {
+    font-size: 1em;
+    @media (max-width: 768px) {
+    text-align: center;
+    margin: 0;
+    
+
+}
+  }
+
+  a {
+    text-decoration: none;
+  }
+  img {
+    width: 1.2em;
+    height: 1.2em;
+    margin-right: 10px;
+  }
 }
