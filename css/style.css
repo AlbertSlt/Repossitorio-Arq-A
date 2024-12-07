@@ -1,5 +1,6 @@
 /*Para no colocar links de fonts en cada html, uso import con la seccion de href de googlefonts*/
 @import url("https://fonts.googleapis.com/css2?family=Overlock:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -15,10 +16,12 @@ header .navbar {
   background-color: #ffebcd;
   border-bottom: 0.1em solid darkslategray;
 }
+
 header .navbar .container-fluid .navbar-text {
   padding: 0px;
   /*Link header*/
 }
+
 header .navbar .container-fluid .navbar-text a {
   font-family: "Overlock", sans-serif;
   font-size: 2em;
@@ -34,163 +37,200 @@ main .main .div-logo {
   display: flex;
   justify-content: center;
 }
+
 main .main .div-logo img {
   width: 8vw;
   transform: rotate3d(0, 0, 0, 0deg);
   transition: all 0.2s ease-in-out;
 }
+
 main .main .div-logo img:hover {
   transform: rotate3d(0, 1, 0, 360deg);
   filter: saturate(0%) contrast(40%);
 }
+
 @media (max-width: 1024px) {
   main .main .div-logo img {
     width: 15vw;
   }
 }
+
 @media (max-width: 768px) {
   main .main .div-logo img {
     width: 20vw;
   }
 }
+
 main .main .text-logo {
   color: #4c8077;
   padding-bottom: 20px;
 }
+
 main .main .text-logo h2 {
   margin-top: 0.2em;
   font-family: "Overlock", sans-serif;
   font-size: 2em;
 }
+
 main .main .text-logo h3 {
   margin-top: 0.2em;
   font-family: "Overlock", sans-serif;
   font-size: 2em;
 }
+
 main .main .text-logo p {
   padding: 4em;
   padding: 0px;
 }
+
 @media (max-width: 768px) {
   main .main .text-logo p {
     padding: 2em;
   }
 }
+
 main .main .text-logo p p {
   font-family: "Playfair", serif;
   font-size: 1.5em;
 }
+
 main .main .text-logo p h4 {
   margin-top: 100px;
   font-family: "Overlock", sans-serif;
   font-size: 2.5em;
   color: #4c8077;
 }
+
 main .texto-desc {
   padding: 4em;
 }
+
 @media (max-width: 768px) {
   main .texto-desc {
     padding: 2em;
   }
 }
+
 main .texto-desc p {
   font-family: "Playfair", serif;
   font-size: 1.5em;
 }
+
 main .texto-desc h4 {
   margin-top: 100px;
   font-family: "Overlock", sans-serif;
   font-size: 2.5em;
   color: #4c8077;
 }
+
 main .descripcion {
   padding: 4em;
 }
+
 @media (max-width: 768px) {
   main .descripcion {
     padding: 2em;
   }
 }
+
 main .descripcion p {
   font-family: "Playfair", serif;
   font-size: 1.5em;
 }
+
 main .descripcion h4 {
   margin-top: 100px;
   font-family: "Overlock", sans-serif;
   font-size: 2.5em;
   color: #4c8077;
 }
+
 main .tarjetas {
   overflow: hidden;
   font-family: "Playfair", serif;
 }
+
 main .tarjetas h3 {
   font-size: 2em;
 }
+
 main .tarjetas p {
   font-size: 1.5em;
 }
+
 main .tarjetas .card {
   border: 2px solid black;
 }
+
 main .tarjetas-proy h5 {
   font-size: 2em;
 }
+
 main .tarjetas-proy .text-body-secondary {
   font-size: 1em;
   font-style: italic;
 }
+
 main .tarjetas-proy .tarjetas-proy-2 {
   border: solid 1px darkslategray;
   border-radius: 2em;
   overflow: hidden;
 }
+
 main .tarjetas-serv {
   margin-top: 3em;
   padding: 2em;
 }
+
 main .tarjetas-serv .card {
   width: 96%;
   margin: 0 auto;
   margin-bottom: 2em;
 }
+
 main .tarjetas-serv .card-body {
   padding: 2em;
   display: flex;
   flex-direction: column;
   align-items: start;
 }
+
 main .tarjetas-serv .card-body .titulo-descripcion {
   display: flex;
   align-items: start;
 }
+
 main .tarjetas-serv .card-body .titulo-descripcion h5 {
   font-size: 1.5em;
   width: 8em;
 }
+
 @media (max-width: 768px) {
   main .tarjetas-serv .card-body .titulo-descripcion {
     flex-direction: column;
   }
 }
+
 main .tarjetas-serv .card-body .text-body-secondary {
   font-size: 1em;
   font-style: italic;
 }
+
 main .tarjetas-serv .card-body ul {
   margin-left: 10em;
 }
+
 @media (max-width: 768px) {
   main .tarjetas-serv .card-body ul {
     margin: 0 auto;
   }
 }
+
 main .card {
   margin: 0 auto;
   margin-bottom: 3em;
 }
+
 main .imagen-nosotros {
   margin: 0 auto;
   border: 5px solid black;
@@ -206,6 +246,7 @@ p {
   color: black;
   border: 1px solid black;
 }
+
 .boton-submit:hover {
   background-color: #c7c5b8;
   color: black;
@@ -217,15 +258,18 @@ p {
   padding: 0;
   color: black;
 }
+
 @media (max-width: 768px) {
   .texto-amigable {
     padding: 2em;
   }
 }
+
 .texto-amigable p {
   font-family: "Playfair", serif;
   font-size: 1.5em;
 }
+
 .texto-amigable h4 {
   margin-top: 100px;
   font-family: "Overlock", sans-serif;
@@ -241,6 +285,7 @@ p {
   aspect-ratio: 4/2;
   margin-bottom: 2.2em;
 }
+
 @media (max-width: 1024px) {
   .div-mapa {
     width: 70%;
@@ -249,6 +294,7 @@ p {
     align-items: center;
   }
 }
+
 @media (max-width: 768px) {
   .div-mapa {
     width: 70%;
@@ -256,11 +302,13 @@ p {
     flex-direction: column;
   }
 }
+
 .div-mapa .mapa {
   border: 2px solid black;
   width: 80%;
   margin-right: 1em;
 }
+
 .div-mapa .mapa p {
   padding: 1em;
   font-family: "Playfair", serif;
@@ -274,11 +322,13 @@ p {
   padding-top: 15px;
   border-top: 0.1em solid darkslategray;
 }
+
 .footer .div-footer {
   display: flex;
   justify-content: center;
   gap: 3em;
 }
+
 @media (max-width: 768px) {
   .footer .div-footer {
     flex-direction: column;
@@ -286,20 +336,24 @@ p {
     gap: 0.5em;
   }
 }
+
 .footer p {
   font-size: 1em;
   color: #203633;
 }
+
 @media (max-width: 768px) {
   .footer p {
     text-align: center;
     margin: 0;
   }
 }
+
 .footer a {
   text-decoration: none;
   color: #203633;
 }
+
 .footer img {
   width: 1.2em;
   height: 1.2em;

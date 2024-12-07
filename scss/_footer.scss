@@ -1,7 +1,6 @@
 @use "general" as general;
 $footer-font-color: #203633;
 
-
 .footer {
   background-color: general.$footer-bg;
   font-family: general.$font-2;
@@ -25,11 +24,9 @@ $footer-font-color: #203633;
     font-size: 1em;
     color: $footer-font-color;
     @media (max-width: 768px) {
-    text-align: center;
-    margin: 0;
-    
-
-}
+      text-align: center;
+      margin: 0;
+    }
   }
 
   a {
