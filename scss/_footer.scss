@@ -1,4 +1,7 @@
 @use "general" as general;
+$footer-font-color: #203633;
+
+
 .footer {
   background-color: general.$footer-bg;
   font-family: general.$font-2;
@@ -20,6 +23,7 @@
 
   p {
     font-size: 1em;
+    color: $footer-font-color;
     @media (max-width: 768px) {
     text-align: center;
     margin: 0;
@@ -30,6 +34,7 @@
 
   a {
     text-decoration: none;
+    color: $footer-font-color;
   }
   img {
     width: 1.2em;

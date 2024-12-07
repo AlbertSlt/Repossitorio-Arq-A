@@ -288,6 +288,7 @@ p {
 }
 .footer p {
   font-size: 1em;
+  color: #203633;
 }
 @media (max-width: 768px) {
   .footer p {
@@ -297,6 +298,7 @@ p {
 }
 .footer a {
   text-decoration: none;
+  color: #203633;
 }
 .footer img {
   width: 1.2em;
